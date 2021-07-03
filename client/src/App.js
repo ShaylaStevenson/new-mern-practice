@@ -9,7 +9,7 @@ const App = () => {
   
     return (
       <div className="App">
-        <Router>
+        {/* <Router> */}
           <div>
             <Navigation />
             <Switch>
@@ -18,7 +18,7 @@ const App = () => {
               </Route>
             </Switch>
           </div>
-        </Router>
+        {/* </Router> */}
       </div>
     );
 }

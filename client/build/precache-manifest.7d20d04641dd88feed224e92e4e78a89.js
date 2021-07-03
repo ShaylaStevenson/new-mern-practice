@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "59139820f82a88638355",
+    "revision": "c0a1e27ba1b44197dcd0",
     "url": "/new-mern-practice/static/css/main.9a555ecc.chunk.css"
   },
   {
-    "revision": "59139820f82a88638355",
-    "url": "/new-mern-practice/static/js/main.5a117b20.chunk.js"
+    "revision": "c0a1e27ba1b44197dcd0",
+    "url": "/new-mern-practice/static/js/main.452983b2.chunk.js"
   },
   {
     "revision": "c5893241a6eb6858c7e0",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/new-mern-practice/static/media/profilePicture.ab2c3997.jpg"
   },
   {
-    "revision": "41ecff045ece0c7b96af6b4aa37d2389",
+    "revision": "f8563422db12e09282f5c1a4370ee162",
     "url": "/new-mern-practice/index.html"
   }
 ];
