@@ -1,17 +1,26 @@
-import React, { Component } from "react";
-import profilePicture from "./img/profilePicture.jpg";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import Home from "./pages/Home"
 import "./App.css";
+//import TestPage from "./pages/TestPage";
 
-class App extends Component {
-  render() {
+const App = () => {
+  
     return (
       <div className="App">
-        <h1>New Mern Practice</h1>
-        <h2>Author: Shayla Stevenson</h2>
-        <img src={profilePicture} alt="Shayla Stevenson" />
+        <Router>
+          <div>
+            <Navigation />
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </div>
+        </Router>
       </div>
     );
-  }
 }
 
-export default App;
+export default App
