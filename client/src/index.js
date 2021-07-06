@@ -3,15 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
-import { HashRouter, BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
-// ReactDOM.render(<App />, document.getElementById("root"));
-
-
+// use HashRouter when deploying to gh-pages
 ReactDOM.render(
+    // todo: look up:
     // <React.StrictMode>
-      <HashRouter
-      basename="/new-mern-practice">
+      // name of the github repo
+      <HashRouter basename="/new-mern-practice">
         <App />
       </HashRouter>,
     // </React.StrictMode>,

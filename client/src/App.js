@@ -1,5 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {  Route, Switch } from "react-router-dom";
+//used HashRouter in order to deploy to gh pages; set up in index.js
+//BrowserRouter as Router,
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home"
 import "./App.css";
