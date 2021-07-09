@@ -9,6 +9,7 @@ import "./App.css";
 import TestPage from "./pages/TestPage";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from "react-bootstrap/Card"
+import BottomHamburger from "./components/BottomHamburger";
 
 const App = () => {
     return (
@@ -26,7 +27,9 @@ const App = () => {
             </Switch>
            
             <Card><h4>I am a card, YEAH!</h4></Card>
-            <Footer />
+            {/* <BottomHamburger /> */}
+            <Footer/>
+
           </div>
         {/* </Router> */}
       </div>
