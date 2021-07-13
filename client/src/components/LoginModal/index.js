@@ -4,8 +4,9 @@ import Modal from 'react-modal';
 // required to meet accesibility standards
 Modal.setAppElement('#root');
 
-const LoginModal = ({ isOpen, closeModal }) => {
+export default function LoginModal({ isOpen, closeModal }) {
   //console.log(props.isOpen)
+  // make zindex greater than that of BottomIcon
 
   return (
       <div>
@@ -24,5 +25,3 @@ const LoginModal = ({ isOpen, closeModal }) => {
       </div>
   )
 }
-
-export default LoginModal;

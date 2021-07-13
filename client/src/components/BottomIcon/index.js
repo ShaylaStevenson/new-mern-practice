@@ -1,6 +1,7 @@
 import React from "react";
 import Avatar from '@material-ui/core/Avatar'
 import MenuIcon from '@material-ui/icons/MenuRounded';
+import CloseIcon from '@material-ui/icons/CloseRounded'
 import { makeStyles } from '@material-ui/core/styles';
 import { pink, green } from '@material-ui/core/colors'
 
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
         right: 0,
         bottom: 0,
         padding: "8px",
+        zIndex: 1400
     },
     menuStyles: {
         fontSize: 40
@@ -34,17 +36,25 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const BottomHamburger = ({ hamburgerHandle }) => {
+export const BottomHamburger = () => {
     const classes = useStyles();
-
     return(
-        <div onClick={hamburgerHandle} className={classes.root}>
-            <Avatar className={classes.pink}>
-            {/* , classes.large */}
+        <div className={classes.root}>
+            <Avatar className={`${classes.pink} ${classes.large}`}>
                 <MenuIcon className={classes.menuStyles} />
             </Avatar>
-        </div>
+
+        </div>  
     )
 }
 
-export default BottomHamburger;
+export const BottomClose = () => {
+    const classes = useStyles();
+    return(
+        <div className={classes.root}>
+            <Avatar className={`${classes.green} ${classes.large}`}>
+                <CloseIcon className={classes.menuStyles} />
+            </Avatar>
+        </div>  
+    )
+}

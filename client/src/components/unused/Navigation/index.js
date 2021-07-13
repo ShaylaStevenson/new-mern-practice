@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import LoginModal from "../LoginModal";
+import LoginModal from "../../LoginModal";
 import {Link} from "react-router-dom"
 import "./style.css"
 import { Navbar, Nav, NavbarBrand, NavItem } from 'react-bootstrap';
