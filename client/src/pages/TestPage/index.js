@@ -3,7 +3,7 @@ import React from "react";
 const TestPage = () => {
     return(
         <div>
-            <h1>This is the test page</h1>
+            <h1 style={{color:"#fff", marginTop:"80px"}}>I love you, mom!</h1>
         </div>
     )
 }

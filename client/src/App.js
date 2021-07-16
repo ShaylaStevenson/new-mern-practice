@@ -7,8 +7,9 @@ import {  Route, Switch } from "react-router-dom";
 import Home from "./pages/Home"
 import "./App.css";
 import TestPage from "./pages/TestPage";
-import Card from "react-bootstrap/Card"
+//import Card from "react-bootstrap/Card"
 import SideDrawer from "./components/SideDrawer";
+import DrawerBottom from "./components/DrawerBottom";
 const App = () => {
     return (
       <div className="App">
@@ -22,9 +23,9 @@ const App = () => {
                 <TestPage />
               </Route>
             </Switch>
-           
-            <Card><h4>I am a card, YEAH!</h4></Card>
-            <SideDrawer/>
+           <DrawerBottom/>
+            {/* <Card><h4>I am a card, YEAH!</h4></Card> */}
+            {/* <SideDrawer/> */}
             {/* <BottomHamburger /> */}
             {/* <Footer/> */}
 
